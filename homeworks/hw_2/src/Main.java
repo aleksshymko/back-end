@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        System.out.println("---main is start");
-        System.out.flush();
+//        System.out.println("---main is start");
+//        System.out.flush();
 
         Thread numberDiv2 = new Thread(() -> {
             int i = 0;
@@ -42,7 +42,7 @@ public class Main {
 
         Thread.sleep(3000);
 
-        System.out.println("---main is finish");
-        System.out.flush();
+//        System.out.println("---main is finish");
+//        System.out.flush();
     }
 }
