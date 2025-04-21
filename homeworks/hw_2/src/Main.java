@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-//        System.out.println("---main is start");
-//        System.out.flush();
+        System.out.println("---main is start");
+        //System.out.flush();
 
         Thread numberDiv2 = new Thread(() -> {
             int i = 0;
@@ -11,11 +11,11 @@ public class Main {
                     System.out.println(i + " делится на " + 2);
                 }
                 i++;
-//                try {
-//                    Thread.sleep(1);
-//                } catch (InterruptedException e) {
-//                    throw new RuntimeException(e);
-//                }
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
 
@@ -26,11 +26,11 @@ public class Main {
                     System.out.println(i + " делится на " + 3);
                 }
                 i++;
-//                try {
-//                    Thread.sleep(1);
-//                } catch (InterruptedException e) {
-//                    throw new RuntimeException(e);
-//                }
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
 
@@ -40,9 +40,9 @@ public class Main {
         numberDiv3.setDaemon(true);
         numberDiv3.start();
 
-        Thread.sleep(3000);
+        Thread.sleep(20);
 
-//        System.out.println("---main is finish");
-//        System.out.flush();
+        System.out.println("---main is finish");
+        //System.out.flush();
     }
 }
